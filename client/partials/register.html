@@ -1,0 +1,34 @@
+<div class="col-md-4">
+  <h1>Register</h1>
+  <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+  <form class="form" ng-submit="register()">
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" name="username" ng-model="registerForm.username" required>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+        <input type="password" class="form-control" name="password" ng-model="registerForm.password" required>
+      </div>
+	      <div class="form-group">
+      <label>email</label>
+        <input type="text" class="form-control" name="email" ng-model="registerForm.email" required>
+      </div>
+	      <div class="form-group">
+      <label>phone</label>
+        <input type="text" class="form-control" name="password" ng-model="registerForm.phone" required>
+      </div>
+	      <div class="form-group">
+      <label>DateOfBirth</label>
+        <input type="text" class="form-control" name="password" ng-model="registerForm.dateofbirth" required>
+      </div>
+	      <div class="form-group">
+      <label>Address</label>
+        <input type="textarea" class="form-control" name="password" ng-model="registerForm.address" required>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-default" ng-disabled="disabled">Register</button>
+		<a href="/#/login"> Already a member! click here to login</a>
+      </div>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<div ng-controller="ProfileController">
+<h1>Welcome back {{profile[0].username}} !</h1>
+<hr>
+<h2> {{profile[0].email}}</h2>
+<h2>{{profile[0].phone}}</h2>
+<h2>{{profile[0].dateofbirth}}</h2>
+<h2>{{profile[0].address}}</h2>
+</div>
+<div ng-controller="logoutController">
+  <a ng-click='logout()' class="btn btn-default">Logout</a>
+</div>
