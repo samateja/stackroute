@@ -30,7 +30,7 @@ myApp.config(function ($routeProvider) {
       access: {restricted: false}
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/login'
     });
 });
 
